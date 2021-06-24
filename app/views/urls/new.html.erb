@@ -1,0 +1,6 @@
+<h3>Add New Url</h3>
+
+<%= form_with model: @url do |f| %>
+  <p>Please input your long url: <%= f.text_field :long_url %></p>
+  <%= f.submit %>
+<% end %>

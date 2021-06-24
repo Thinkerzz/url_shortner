@@ -1,0 +1,19 @@
+<%= link_to "New Url", new_url_path %>
+
+<br>
+<br>
+
+<table>
+  <thead>
+    <th>Url</th>
+    <th>Actions</th>
+  </thead>
+  <tbody>
+    <% @urls.each do |url| %>
+      <tr>
+        <td title="<%= url.long_url %>"><%= url.long_url.truncate(50) %></td>
+        <td><%= link_to 'Visit via Short Url', url_path(token: url.short_url), target: '_blank' %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

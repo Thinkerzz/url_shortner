@@ -1,0 +1,6 @@
+<% if @url.present? %>
+  <p>visit count: <%= @url.visit_count %></p>
+  <p>ip address: <%= (@url.ip_address == '') ? 'NA' : @url.ip_address %></p>
+<% else %>
+  <p>Link not found</p>
+<% end %>
