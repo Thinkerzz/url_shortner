@@ -5,20 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* bundle install
 
-* System dependencies
+* yarn install
 
-* Configuration
+* rake db:create
 
-* Database creation
+* rake db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You are good to go.
